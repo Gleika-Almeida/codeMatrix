@@ -6,7 +6,7 @@
 ![Matrix Code Demo](demo/demo.gif)
 
 👉 Versão online:  
-https://.github.io/matrix-code/
+https://gleika-almeida.github.io/codeMatrix/
 
 ---
 
