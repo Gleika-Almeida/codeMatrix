@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    font-family: monospace;
+}
+
+canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+/*Painel de controle */
+
+.controls {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    z-index: 10;
+}
+
+.controls label {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+}
+
+.controls input[type="range"]{
+    width: 120px;
+}
+
+.controls button {
+    background: #111;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 6px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.controls button:hover {
+    background: #222;
+}
+
+/* Estado oculto da UI */
+.controls.hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(20px);
+}
+
+/* Transição suave */
+.controls {
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
